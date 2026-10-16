@@ -61,6 +61,7 @@ server.listen(3000, () => {
     console.log("サーバー起動 : http://localhost:3000");
 });
 
+// テストデータ
 // const add = {
 //     id: 442177283,
 //     project: {
@@ -223,3 +224,19 @@ server.listen(3000, () => {
 //     },
 //     created: "2026-10-15T06:58:21Z",
 // };
+
+// テスト用
+// curl -i -X POST 'https://backlog-discode-notifler.2250378.workers.dev/' \
+//   -H 'Content-Type: application/json' \
+//   -d '{
+//     "type": 2,
+//     "content": {
+//       "summary": "Cloudflareテスト",
+//       "status": {
+//         "name": "処理中"
+//       },
+//       "assignee": {
+//         "name": "テスト担当者"
+//       }
+//     }
+//   }'
